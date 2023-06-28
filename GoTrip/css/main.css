@@ -29,6 +29,11 @@ body {
 
 }
 
+.container-left {
+    padding-right: calc( (100% - var(--container-width))/2 + var(--container-padding) );
+
+}
+
 
 .block {
     height: 200px;
@@ -109,16 +114,11 @@ body {
     right: 10px;
     bottom: -6px;
     
-    
-
     display: block;
     /* width: 35px; */
     height: 4px;
     border-radius: 100px;
     background: #C4C4C4;
-
-
-
 }
 
 .nav__login {
@@ -169,7 +169,6 @@ body {
 .header__title {
     font-size: 55px;
     margin-bottom: 30px;
-
 }
 
 .header__text {
@@ -215,4 +214,86 @@ body {
     max-width: unset;
     width: 894px;
     height: 940px;
+    
+    pointer-events: none;
+}
+
+/* Destinations */
+
+
+.destinations {
+    padding: 96px 0px 100px;
+    overflow-x: hidden;
+}
+
+.destinations__row {
+    display: flex;
+    column-gap: 50px;
+}
+.destinations__content {
+    max-width: 456px;
+}
+.destinations__slider {
+    width: 1110px;
+    flex-shrink: 0;
+}
+
+.destinations__suptitle {
+    font-size: 30px;
+}
+
+.destinations__title {
+    font-size: 55px;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.destinations__text {
+    color: var(--secondary);
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+.btn__all {
+    color: #FEFEFE;
+    font-size: 20px;
+    font-weight: 600;
+    
+    display: inline-block;
+    padding: 25px 44px;
+
+    border-radius: 27px;
+    background: linear-gradient(172deg, #FF7B4E 0%, #FF584E 100%);
+}
+
+.btn__all:hover {
+    background: linear-gradient(172deg, #f76230 0%, #fc443b 100%), #c2c2c2;
+}
+
+.btn__all:active {
+    position: relative;
+    top: 2px;
+}
+
+
+/*Slider*/
+
+.destinations__slider {
+
+}
+.slider {    
+}
+.slider__item {
+    width: 335px;
+    height: 402px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.slider__item.active {
+    width: 380px;
+    height: 456px;
 }

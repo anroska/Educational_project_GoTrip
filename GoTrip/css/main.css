@@ -340,3 +340,57 @@ body {
     padding-right: 26px;
     justify-content: flex-end;
 }
+
+/* Customers */
+.customers {
+    padding: 100px 0 133px;
+}
+
+.customers__row {
+    display: flex;
+    column-gap: 68px;
+}
+.customers__img {
+    max-width: 478px;  
+}
+
+.customers__img img{
+    border-radius: 60px;
+}
+
+.customers__content {
+}
+.customers__title {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.review {
+}
+.review__client {
+}
+.review__client--avatar { 
+}
+.review__client-desc {
+}
+.review__client-desc-name {
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+}
+.review__client-desc-coutry {
+    color: rgb(15, 31, 28, 0.5);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+.review__text {
+    margin-bottom: 30px;
+    color: rgb(15, 31, 28, 0.5);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500; 
+}
+.review__rating {
+}
